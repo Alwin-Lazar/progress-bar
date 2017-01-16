@@ -12,16 +12,20 @@
 		1145ED641E2CCC0300E7EC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1145ED621E2CCC0300E7EC25 /* Main.storyboard */; };
 		1145ED661E2CCC0300E7EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1145ED651E2CCC0300E7EC25 /* Assets.xcassets */; };
 		1145ED691E2CCC0300E7EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1145ED671E2CCC0300E7EC25 /* LaunchScreen.storyboard */; };
+		1145ED761E2CCD7800E7EC25 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145ED751E2CCD7800E7EC25 /* ProgressBarView.swift */; };
+		1145ED781E2CD67900E7EC25 /* ProgressBarDraws.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145ED771E2CD67900E7EC25 /* ProgressBarDraws.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1145ED5B1E2CCC0300E7EC25 /* ProgressFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1145ED5E1E2CCC0300E7EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1145ED601E2CCC0300E7EC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1145ED601E2CCC0300E7EC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ProgressFun/ViewController.swift; sourceTree = "<group>"; };
 		1145ED631E2CCC0300E7EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1145ED651E2CCC0300E7EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1145ED681E2CCC0300E7EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1145ED6A1E2CCC0300E7EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1145ED751E2CCD7800E7EC25 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		1145ED771E2CD67900E7EC25 /* ProgressBarDraws.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressBarDraws.swift; path = ProgressFun/ProgressBarDraws.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,9 @@
 		1145ED521E2CCC0200E7EC25 = {
 			isa = PBXGroup;
 			children = (
+				1145ED721E2CCC3200E7EC25 /* Model */,
+				1145ED711E2CCC2300E7EC25 /* View */,
+				1145ED701E2CCC1200E7EC25 /* Controller */,
 				1145ED5D1E2CCC0300E7EC25 /* ProgressFun */,
 				1145ED5C1E2CCC0300E7EC25 /* Products */,
 			);
@@ -55,13 +62,36 @@
 			isa = PBXGroup;
 			children = (
 				1145ED5E1E2CCC0300E7EC25 /* AppDelegate.swift */,
-				1145ED601E2CCC0300E7EC25 /* ViewController.swift */,
 				1145ED621E2CCC0300E7EC25 /* Main.storyboard */,
 				1145ED651E2CCC0300E7EC25 /* Assets.xcassets */,
 				1145ED671E2CCC0300E7EC25 /* LaunchScreen.storyboard */,
 				1145ED6A1E2CCC0300E7EC25 /* Info.plist */,
 			);
 			path = ProgressFun;
+			sourceTree = "<group>";
+		};
+		1145ED701E2CCC1200E7EC25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1145ED601E2CCC0300E7EC25 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1145ED711E2CCC2300E7EC25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1145ED771E2CD67900E7EC25 /* ProgressBarDraws.swift */,
+				1145ED751E2CCD7800E7EC25 /* ProgressBarView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1145ED721E2CCC3200E7EC25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1145ED781E2CD67900E7EC25 /* ProgressBarDraws.swift in Sources */,
+				1145ED761E2CCD7800E7EC25 /* ProgressBarView.swift in Sources */,
 				1145ED611E2CCC0300E7EC25 /* ViewController.swift in Sources */,
 				1145ED5F1E2CCC0300E7EC25 /* AppDelegate.swift in Sources */,
 			);
